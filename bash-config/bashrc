@@ -1,0 +1,13 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
+fi
+
+# User specific aliases and functions
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+export PYENV_VERSION=3.6.9

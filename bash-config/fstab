@@ -1,0 +1,8 @@
+#
+LABEL=/     /           ext4    defaults,noatime  1   1
+tmpfs       /dev/shm    tmpfs   defaults        0   0
+devpts      /dev/pts    devpts  gid=5,mode=620  0   0
+sysfs       /sys        sysfs   defaults        0   0
+proc        /proc       proc    defaults        0   0
+UUID=905984ad-514c-40fa-bef3-e72ae4d1e359 /shared ext4 _netdev 0 0
+fs-b770b1cf.efs.us-east-2.amazonaws.com:/ /efs nfs4 nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,_netdev 0 0
