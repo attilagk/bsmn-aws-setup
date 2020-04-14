@@ -51,3 +51,6 @@ if [[ ! -z "$TZ" ]] && [[ $ZONEINFO =~ (^|[[:space:]])"$TZ"($|[[:space:]]) ]]; t
     sed -i '/ZONE/s|UTC|'$TZ'|' /etc/sysconfig/clock
     ln -sf /usr/share/zoneinfo/$TZ /etc/localtime
 fi
+
+# add Taejeong's public key
+echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyo3vT0OLM+zROLs2/BWz1u/roZi6tIAJACjc/q8BIsvH4LLzABBSZ12iZlUxInueo/XuYz3NavDuzesKp9Uc0+aQJAR6oi5j043PZ+z2DMON3Zafjdf2kyBNeXZR3AWbAhM1jPQq69Y5CY21vI7JohSXbnzYfOr8KeySRldh/sV42lTUMrBeQM/92ewnQQ5w5W7ZvbxSjrZ84ukVbMAj1fzz5wH/Wk5oR60Upu8IA+M25pyev3KkXwF3/y9rRkubXFAjg5oUKMELb08TnjtvgMmL5XO0of8dru6futwce7Ix629o86FN5YFe1LQ1qv+B0tcjyOzw/NvrbCthQPoHD tj-macbook" >> ~/.ssh/authorized_keys
