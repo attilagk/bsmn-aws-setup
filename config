@@ -4,8 +4,6 @@ sanity_check = true
 cluster_template = bsmn
 
 [aws]
-aws_access_key_id = AKIAQLRXOYC2AGLM5YGA
-aws_secret_access_key = 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
 aws_region_name = us-east-2
 
 [cluster bsmn]
